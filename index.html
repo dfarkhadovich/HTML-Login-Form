@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>| Login Form |</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        body{
+            background: linear-gradient(90deg, rgba(0,198,255,1) 16%, rgba(0,31,255,1) 52%, rgba(255,0,219,1) 100%);
+            height: 100vh;
+            /* height: 100vh; -> bu computer ekranining balandligi */
+            display: flex;
+            /* display: flex; -> berilmasa align-items: center;  va justify-content: center; ishlamaydi */
+            align-items: center;
+            /* align-items: center; -> ota elementni ichidagi child elementlarni bo'yiga o'rtaga suradi */
+            justify-content: center;
+            /* justify-content: center; -> ota elementni ichidagi child elementlarni eniga o'rtaga suradi */
+        }
+        .login__container
+        {
+            width: 400px;
+            height: 600px;  
+            background-color: white;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .title
+        {
+            margin-top: 70px;
+            font-size: 45px;
+            font-weight: 500;
+        }
+        .inputs
+        {
+            width: 80%;
+            height: 40px;
+            margin-top: 30px;
+            border: 1px solid gray;
+            outline: none;
+            /* outline: none; -> input ichiga bosilganda ichki qora chiziq chqishini yo'qotadi */
+            border-radius: 5px;
+            text-indent: 10px;
+            /* text-indent: inputdagi textlarni oz miqdorda jildirish uchun ishlatiladi */
+        }
+        .button
+        {
+            width: 80%;
+            height: 40px;
+            background: linear-gradient(90deg, rgba(0,198,255,1) 16%, rgba(0,31,255,1) 52%, rgba(255,0,219,1) 100%);
+            margin-top: 30px;
+            border: none;
+            font-size: 18px;
+            font-weight: 500;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+            /* cursor: pointer; -> cursor turlarini o'zgartidi */
+        }
+        .text
+        {
+            font-size: 25px;
+            color: gray;
+            margin-top: 25px;
+        }
+        .google
+        {
+            width: 35%;
+            height: 35px;
+            border: none;
+            border-radius: 5px;
+            color: red;
+            font-weight: 600;
+            margin-top: 30px;
+            margin-right: 15px;
+            cursor: pointer;
+        }
+        .facebook
+        {
+            width: 35%;
+            height: 35px;
+            border: none;
+            border-radius: 5px;
+            color: dodgerblue;
+            font-weight: 600;
+            margin-top: 30px;
+            margin-left: 15px;
+            cursor: pointer;
+        }
+        .desc
+        {
+            margin-top: 60px;
+            font-size: 20px;
+        }
+        .link{
+            color: dodgerblue;
+            text-decoration: none;
+            /* text-decoration: none; textni tagidagi undescoreni yo'qotadi */
+        }
+    </style>
+</head>
+<body>
+    <div class="login__container">
+        <h1 class="title">LogIn Form</h1>
+        <input class="inputs" placeholder="Enter your username" type="text">
+        <input class="inputs" placeholder="Enter your password" type="password">
+        <button class="button">SIGN IN</button>
+        <p class="text">Or login with</p>
+        <button class="google">Google</button>
+        <button class="facebook">Facebook</button>
+        <p class="desc">Not a member? <a class="link" href="">Sign Up Now</a></p>
+    </div>
+</body>
+</html>
